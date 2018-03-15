@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>
+    <string-array name="sping">
+     <item>安徽省合肥市蜀山区锦绣大道</item>  
+    <item>安徽省合肥市经开区芙蓉路</item>  
+    <item>安徽省合肥市庐阳区淮河路</item>  
+    </string-array>
+</resources>
+

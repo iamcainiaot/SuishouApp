@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="35dp"
+		android:background="#97D5DE"
+		android:orientation="horizontal" >
+
+		<ImageButton
+			android:id="@+id/bt_back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:background="#97D5DE"
+			android:gravity="center"
+			android:onClick="back"
+			android:src="@drawable/back" />
+
+		<TextView
+			android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="历史订单"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+		
+		    <ImageButton
+            android:id="@+id/myorder_refresh"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/refrash" />
+	</RelativeLayout>
+
+    <ListView
+        android:id="@+id/Ls_myorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:dividerHeight="5dp">
+    </ListView>
+
+</LinearLayout>

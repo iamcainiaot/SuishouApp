@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+<TableLayout
+ 	android:layout_width="match_parent"
+ 	android:layout_height="match_parent">
+ <TableRow 
+     android:background="#3BB5FF">
+    <ImageButton
+        android:id="@+id/bt_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3BB5FF"
+        android:onClick="back"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/tv_fabu"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:text="发布" />
+	
+	</TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="物品名称" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/pro_name"
+            android:layout_height="wrap_content"
+            android:hint="请输入:" >
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="物品地址" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/pro_address"
+            android:layout_height="wrap_content"
+            android:hint="请输入:" >
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="数量" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/pro_num"
+            android:layout_height="wrap_content"
+            android:hint="请输入:" >
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="收件地址" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/rec_address"
+            android:layout_height="wrap_content"
+            android:hint="请输入:" >
+        </EditText>
+    </TableRow>
+
+ 
+    <TableRow>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+        
+    </TableRow>
+
+    <TableRow>
+    <Button
+        android:id="@+id/sure"
+        android:layout_height="wrap_content"
+        android:layout_span="2"
+        android:background="@drawable/drawable_res"
+        android:text="我要发布" />
+ </TableRow>
+</TableLayout>	
+
+</LinearLayout>

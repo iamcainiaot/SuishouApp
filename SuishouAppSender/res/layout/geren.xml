@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#dedede"
+	android:orientation="vertical" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="30dp" >
+
+		<TextView
+			android:id="@+id/wode_title"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:layout_centerInParent="true"
+			android:background="#e0ffff"
+			android:gravity="center"
+			android:text="个人中心" />
+
+		<Button
+			android:id="@+id/wode_setting"
+			android:layout_width="wrap_content"
+			android:layout_height="30dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="#e0ffff"
+			android:gravity="center"
+			android:text="设置" />
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:background="#8db6cd"
+		android:orientation="vertical" >
+
+		<ImageButton
+			android:id="@+id/user_img"
+			android:layout_width="70dp"
+			android:layout_height="70dp"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="25dp"
+			android:background="#00000000"
+			android:scaleType="centerCrop"
+			android:src="@drawable/img" />
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" >
+
+			<TextView
+				android:id="@+id/show_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="10dp"
+				android:gravity="center"
+				android:text="昵称" />
+
+			<TextView
+				android:id="@+id/center_fill2"
+				android:layout_width="10dp"
+				android:layout_height="30dp"
+				android:layout_below="@+id/show_name"
+				android:layout_centerHorizontal="true" />
+
+			<Button
+				android:id="@+id/wode_login"
+				android:layout_width="wrap_content"
+				android:layout_height="30dp"
+				android:layout_below="@+id/center_fill2"
+				android:layout_centerHorizontal="true"
+				android:background="#ffffff"
+				android:gravity="center"
+				android:text="登录" />
+		</RelativeLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="30dp" >
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="180dp"
+		android:background="#ffffff"
+		android:orientation="vertical" >
+
+		<Button
+			android:id="@+id/wode_faq"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_weight="1"
+			android:background="#ffffff"
+			android:drawableLeft="@drawable/faq"
+			android:gravity="center_vertical|left"
+			android:text="   常见问题"
+			android:textSize="20sp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#dedede" >
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/wode_news"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_weight="1"
+			android:background="#ffffff"
+			android:drawableLeft="@drawable/news"
+			android:gravity="center_vertical|left"
+			android:text="   系统消息"
+			android:textSize="20sp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#dedede" >
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/wode_kefu"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_weight="1"
+			android:background="#ffffff"
+			android:drawableLeft="@drawable/kefu"
+			android:gravity="center_vertical|left"
+			android:text="   联系客服"
+			android:textSize="20sp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#dedede" >
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/wode_quit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#ffa54f"
+			android:gravity="center"
+			android:text="退出登录"
+			android:textSize="20sp" />
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ItemPer_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/my" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ItemPer_name"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/Itemdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#9E9FA5"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/Itemcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.example.share.NoScrollGridView
+            android:id="@+id/Itemphoto"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.57"
+            android:numColumns="3"
+            android:scaleType="centerInside"
+            android:stretchMode="columnWidth" >
+        </com.example.share.NoScrollGridView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/Itemzan"
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/good" />
+
+        <ImageView
+            android:id="@+id/Itemcomment"
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/share" />
+
+        <TextView
+            android:id="@+id/Itemzan_num"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@+id/Itemcomment"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number" />
+    </RelativeLayout>
+
+</LinearLayout>

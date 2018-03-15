@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+ 
+    <Button
+        android:id="@+id/shouye"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/shouye_selector"
+        android:gravity="center"
+        android:text="首页"
+        android:textColor="@drawable/text_selector"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/friend"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/friend_selector"
+        android:gravity="center"
+        android:text="朋友"
+        android:textColor="@drawable/text_selector"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/share_selector"
+        android:gravity="center"
+        android:text="分享"
+        android:textColor="@drawable/text_selector"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/wode"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/geren_selector"
+        android:gravity="center"
+        android:text="个人"
+        android:textColor="@drawable/text_selector"
+        android:textSize="10sp" />
+
+</LinearLayout>

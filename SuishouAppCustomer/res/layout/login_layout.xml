@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" 
+	android:stretchColumns="1"
+	>
+
+	
+	<!-- 没添加一个tablerow就表示在该行中加入一列，tablerow中的控件无法指定宽度 -->
+
+	<TableRow>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="用户名" >
+		</TextView>
+
+		<EditText
+			android:id="@+id/account"
+			android:layout_height="wrap_content"
+			android:hint="请输入用户名:" >
+		</EditText>
+	</TableRow>
+
+	<TableRow>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="密码" >
+		</TextView>
+
+		<EditText
+			android:id="@+id/password"
+			android:layout_height="wrap_content"
+			android:hint="请输入密码:" 
+			android:inputType="textPassword">
+		</EditText>
+	</TableRow>
+
+	<TableRow>
+
+		<Button
+			android:id="@+id/login"
+			android:layout_height="wrap_content"
+			android:text="登录" 
+			android:layout_span="2"
+			/>
+	</TableRow>
+
+</TableLayout>

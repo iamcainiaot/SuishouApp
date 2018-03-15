@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+           <Button
+            android:id="@+id/kdy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp" 
+            android:text="快递员"
+            />
+        
+        
+        <Button
+            android:id="@+id/nokdy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kdy"
+            android:layout_centerHorizontal="true"
+            android:text="不是快递员" />
+
+     
+    </RelativeLayout>
+
+</LinearLayout>

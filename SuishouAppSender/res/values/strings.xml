@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="bg_normal">#87ceff</drawable>
+	<drawable name="bg_change">#8deeee</drawable>
+	<string name="app_name">随手快递员</string>
+	<string name="hello_world"> </string>
+	<string name="action_settings">Settings</string>
+	
+
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ffffff"
+	android:orientation="vertical" >
+
+	<TextView
+		android:id="@+id/zhuye_title"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:background="#97D5DE"
+		android:gravity="center"
+		android:text="主页" 
+		android:textColor="#FFFFFF"/>
+
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="120dp"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/safe" />
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="217dp"
+	    android:layout_weight="0.01" >
+<LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+           <RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+
+				<ImageButton
+					android:id="@+id/saoyisao"
+					android:layout_width="160dp"
+					android:layout_height="100dp"
+					android:layout_centerInParent="true"
+					android:background="#D9D9D9"
+					android:src="@drawable/saoyisao" />
+
+				<TextView
+					android:id="@+id/fill_tv1"
+					android:layout_width="wrap_content"
+					android:layout_height="10dp"
+					android:layout_below="@+id/saoyisao" />
+
+				<TextView
+					android:id="@+id/saoyisao_tv"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/fill_tv1"
+					android:layout_centerHorizontal="true"
+					android:gravity="center"
+					android:text="扫一扫" />
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+
+				<ImageButton
+					android:id="@+id/dingwei"
+					android:layout_width="160dp"
+					android:layout_height="100dp"
+					android:layout_centerInParent="true"
+					android:background="#D9D9D9"
+					android:src="@drawable/dingwei" />
+
+				<TextView
+					android:id="@+id/fill_tv2"
+					android:layout_width="wrap_content"
+					android:layout_height="10dp"
+					android:layout_below="@+id/dingwei" />
+
+				<TextView
+					android:id="@+id/dingwei_tv"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/fill_tv2"
+					android:layout_centerHorizontal="true"
+					android:gravity="center"
+					android:text="定位" />
+			</RelativeLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/linearlayout1" >
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+
+				<ImageButton
+					android:id="@+id/call"
+					android:layout_width="160dp"
+					android:layout_height="100dp"
+					android:layout_centerInParent="true"
+					android:background="#D9D9D9"
+					android:src="@drawable/call" />
+
+				<TextView
+					android:id="@+id/fill_tv3"
+					android:layout_width="wrap_content"
+					android:layout_height="10dp"
+					android:layout_below="@+id/call" />
+
+				<TextView
+					android:id="@+id/call_tv"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/fill_tv3"
+					android:layout_centerHorizontal="true"
+					android:gravity="center"
+					android:text="电话" />
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+
+				<ImageButton
+					android:id="@+id/message"
+					android:layout_width="160dp"
+					android:layout_height="100dp"
+					android:layout_centerInParent="true"
+					android:background="#D9D9D9"
+					android:src="@drawable/message" />
+
+				<TextView
+					android:id="@+id/fill_tv4"
+					android:layout_width="wrap_content"
+					android:layout_height="10dp"
+					android:layout_below="@+id/message" />
+
+				<TextView
+					android:id="@+id/call_tv2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/fill_tv4"
+					android:layout_centerHorizontal="true"
+					android:gravity="center"
+					android:text="短信" />
+			</RelativeLayout>
+		</LinearLayout>
+	</RelativeLayout>
+
+</LinearLayout>

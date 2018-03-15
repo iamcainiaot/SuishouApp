@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ffffff"
+	android:orientation="vertical" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+
+		<TextView
+			android:id="@+id/textView1"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:background="#96D6DF"
+			android:gravity="center"
+			android:text="个人中心"
+			android:textColor="#ffffff"
+			android:textSize="20sp" />
+
+		<Button
+			android:id="@+id/wode_setting"
+			android:layout_width="wrap_content"
+			android:layout_height="35dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:background="@android:color/transparent"
+			android:text="设置 "
+			android:textColor="#fff"
+			android:textSize="20sp" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="220dp"
+		android:background="@drawable/wodebackground"
+		android:orientation="vertical" >
+
+		<ImageButton
+			android:id="@+id/user_img"
+			android:layout_width="70dp"
+			android:layout_height="70dp"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="25dp"
+			android:background="#00000000"
+			android:scaleType="centerCrop"
+			android:src="@drawable/tou" />
+
+		<TextView
+			android:id="@+id/fill_tv2"
+			android:layout_width="match_parent"
+			android:layout_height="10dp"
+			android:layout_below="@id/user_img"
+			android:layout_centerHorizontal="true" />
+
+		<TextView
+			android:id="@+id/show_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/fill_tv2"
+			android:layout_centerHorizontal="true"
+			android:text="昵称"
+			android:textSize="20sp" />
+
+		<TextView
+			android:id="@+id/fill_tv3"
+			android:layout_width="match_parent"
+			android:layout_height="10dp"
+			android:layout_below="@id/show_name"
+			android:layout_centerHorizontal="true" />
+
+		<TextView
+			android:id="@+id/show_rank"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/fill_tv3"
+			android:layout_centerHorizontal="true"
+			android:text="信用积分：91"
+			android:textSize="15sp" />
+
+		<Button
+			android:id="@+id/wode_login"
+			android:layout_width="55dp"
+			android:layout_height="30dp"
+			android:layout_above="@+id/fill_tv4"
+			android:layout_centerHorizontal="true"
+			android:background="#ffffff"
+			android:text="登录" />
+
+		<TextView
+			android:id="@+id/fill_tv4"
+			android:layout_width="match_parent"
+			android:layout_height="10dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true" />
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:background="#FFFFFF"
+		android:orientation="vertical" >
+
+		<Button
+			android:id="@+id/wode_yajin"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_weight="1"
+			android:background="#FFFFFF"
+			android:drawableLeft="@drawable/yajin"
+			android:gravity="center_vertical|left"
+			android:text="   我的押金"
+			android:textSize="20sp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#dedede" >
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/wode_myorder"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_weight="1"
+			android:background="#FFFFFF"
+			android:drawableLeft="@drawable/lishidingdan"
+			android:gravity="center_vertical|left"
+			android:text="   历史订单"
+			android:textSize="20sp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#dedede" >
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/wode_faq"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_weight="1"
+			android:background="#FFFFFF"
+			android:drawableLeft="@drawable/faq"
+			android:gravity="center_vertical|left"
+			android:text="   常见问题"
+			android:textSize="20sp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#dedede" >
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/wode_news"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_weight="1"
+			android:background="#FFFFFF"
+			android:drawableLeft="@drawable/news"
+			android:gravity="center_vertical|left"
+			android:text="   系统消息"
+			android:textSize="20sp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#dedede" >
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/wode_kefu"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_weight="1"
+			android:background="#FFFFFF"
+			android:drawableLeft="@drawable/kefu"
+			android:gravity="center_vertical|left"
+			android:text="   联系客服"
+			android:textSize="20sp" />
+	</LinearLayout>
+
+</LinearLayout>

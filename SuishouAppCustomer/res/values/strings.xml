@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="bg_normal">#c7c7c7</drawable>
+    <drawable name="bg_change">#8deeee</drawable>
+
+    <string name="app_name">随手快递</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="desc_shrinkup">收起</string>
+    <string name="desc_spread">显示更多</string>
+
+    <drawable name="color1">#fdf5e6</drawable> <!-- 默认的颜色 -->
+    <drawable name="color2">#6793B9</drawable> <!-- 点击之后的颜色 -->
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#97D5DE" >
+
+		<ImageButton
+			android:id="@+id/geo_back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:background="#97D5DE"
+			android:scaleType="center"
+			android:src="@drawable/back" />
+
+		<Button
+			android:id="@+id/pay"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="#97D5DE"
+			android:gravity="center"
+			android:textColor="#ffffff"
+			android:textSize="18sp"
+			android:text="付款" />
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignTop="@+id/pay"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:text="快递员位置"
+		    android:textColor="#ffffff"
+		    android:textSize="20sp" />
+
+	</RelativeLayout>
+
+	<com.baidu.mapapi.map.MapView
+		android:id="@+id/bmapView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:clickable="true" />
+
+</LinearLayout>

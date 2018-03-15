@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" >
+
+    <Space
+        android:layout_width="5dp"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/PhotoItem"
+        android:layout_width="58dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_head" />
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="208dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/Pro_nameItem"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Pro_numItem"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Pro_stanItem"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#EA2000"
+        android:textSize="18sp" />
+
+</LinearLayout>

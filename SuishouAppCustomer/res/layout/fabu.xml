@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scrollView1"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="35dp"
+		android:background="#97D5DE"
+		android:orientation="horizontal" >
+
+		<ImageButton
+			android:id="@+id/bt_back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:background="#97D5DE"
+			android:gravity="center"
+			android:onClick="back"
+			android:src="@drawable/back" />
+
+		<TextView
+			android:id="@+id/tv_tijiao"
+			android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="订单"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+		
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/ordername"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="35dp"
+			android:gravity="center"
+			android:text="物品名称："
+			android:textSize="20sp" />
+
+		<EditText
+			android:id="@+id/ordername1"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_alignTop="@id/ordername"
+			android:layout_toRightOf="@id/ordername"
+			android:hint="请输入物品名称" />
+
+		<TextView
+			android:id="@+id/orderAdr"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_below="@id/ordername"
+			android:gravity="center"
+			android:text="物品地址："
+			android:textSize="20sp" />
+
+		<EditText
+			android:id="@+id/orderAdr1"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_alignTop="@id/orderAdr"
+			android:layout_toRightOf="@id/orderAdr"
+			android:hint="请输入物品地址" />
+
+		<TextView
+			android:id="@+id/orderCount"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_below="@id/orderAdr"
+			android:gravity="center"
+			android:text="物品数量："
+			android:textSize="20sp" />
+
+		<EditText
+			android:id="@+id/orderCount1"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_alignTop="@id/orderCount"
+			android:layout_toRightOf="@id/orderCount"
+			android:hint="请输入物品数量"
+			android:phoneNumber="true" />
+		
+		<TextView
+			android:id="@+id/ordertype"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_below="@id/orderCount"
+			android:gravity="center"
+			android:text="物品类型："
+			android:textSize="20sp" />
+
+		<EditText
+			android:id="@+id/ordertype1"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_alignTop="@id/ordertype"
+			android:layout_toRightOf="@id/ordertype"
+			android:hint="请输入物品类型"
+			android:phoneNumber="true" />
+
+		<TextView
+			android:id="@+id/orderG_Adr"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_below="@id/ordertype"
+			android:gravity="center"
+			android:text="收货地址："
+			android:textSize="20sp" />
+
+		<Spinner
+			android:id="@+id/orderG_Adr1"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_alignTop="@id/orderG_Adr"
+			android:layout_toRightOf="@id/orderG_Adr"
+			android:entries="@array/sping" />
+			
+	
+		<TextView
+			android:id="@+id/orderG_PhoneNum"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_below="@+id/orderG_Adr1"
+			android:layout_toLeftOf="@+id/orderG_Adr1"
+			android:gravity="center"
+			android:text="联系方式："
+			android:textSize="20sp" />
+
+		<EditText
+			android:id="@+id/orderG_PhoneNum1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@id/orderG_PhoneNum"
+			android:layout_toRightOf="@id/orderG_PhoneNum"
+			android:hint="请输入手机号码"
+			android:maxLength="20" />
+
+		<TextView
+			android:id="@+id/orderG_beizhu"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_below="@+id/orderG_PhoneNum1"
+			android:layout_toLeftOf="@+id/orderG_PhoneNum1"
+			android:gravity="center"
+			android:text="我的备注："
+			android:textSize="20sp" />
+
+		<EditText
+			android:id="@+id/orderG_beizhu1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@id/orderG_beizhu"
+			android:layout_toRightOf="@id/orderG_beizhu"
+			android:hint="请输入备注信息"
+			android:maxLength="34" />
+
+		<TextView
+			android:id="@+id/fill_tv"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_below="@+id/orderG_beizhu1" />
+
+		<Button
+		    android:id="@+id/tijiao"
+		    android:layout_width="match_parent"
+		    android:layout_height="40dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:background="#97D5DE"
+		    android:text="提交订单"
+		    android:textColor="#000000" />
+
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffafa"
+    android:stretchColumns="1" >
+
+    <!-- 没添加一个tablerow就表示在该行中加入一列，tablerow中的控件无法指定宽度 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#1296DB"
+        android:gravity="center"
+        android:text="注册"
+        android:textSize="20sp"
+        android:textColor="#fff" />
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="用户名" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户名:" >
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="密码" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码:"
+            android:inputType="textPassword" >
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="手机号码" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号码" >
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:background="#fefefe"
+            android:text="获取验证码" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_height="wrap_content"
+            android:hint="输入验证码" >
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/zhuczhuces_5"
+            android:layout_height="50dp"
+            android:layout_span="2"
+            android:background="#bc8eff"
+            android:text="注册" />
+    </TableRow>
+
+</TableLayout>
